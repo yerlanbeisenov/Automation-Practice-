@@ -19,7 +19,7 @@ public class BuyAnItemStepDefs extends Base{
 	ShippingPage shipping = new ShippingPage();
 	PaymentMethodPage payment = new PaymentMethodPage();
 	ConfirmationPage confirm = new ConfirmationPage();
-	
+	//this is a comment
 	@Then("^I should be able to change a qty of the item, delete the item, and see a price$")
 	public void i_should_be_able_to_change_a_qty_of_the_item_delete_the_item_and_see_a_price() throws Throwable {
 		try{assertTrue("Decrease QTY button not Enabled", shopCart.decreaseQty.isEnabled());}
