@@ -16,6 +16,7 @@ public class Hooks extends Base{
 		APADriver.setDriver("chrome");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	
 	@After//called after HOOK
